@@ -1,0 +1,21 @@
+<?php if(Mage::registry('current_product')):
+    $product = Mage::registry('current_product');
+    $categoryId = $product->getCategoryId();
+    $category = Mage::getModel('catalog/category')->load($categoryId);
+    $specificCategory = $category->getWhatsappShare();
+    $specificProduct = $product->getWhatsappShare();
+    $productwise = Mage::helper('whatsapp')->getProductWise();
+    if($productwise == '0'):
+            echo $this->getChildHtml('display_whatsapp');
+        elseif($productwise && $specificCategory):
+            echo $this->getChildHtml('display_whatsapp');
+        elseif($specificProduct):
+            echo $this->getChildHtml('display_whatsapp');
+        endif;
+endif;
+
+
+
+
+
+

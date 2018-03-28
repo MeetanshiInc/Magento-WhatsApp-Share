@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Meetanshi_Whatsapp</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open software license</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Meetanshi_Whatsapp</summary>
+    <description>Meetanshi_Whatsapp</description>
+    <notes>Meetanshi_Whatsapp</notes>
+    <authors><author><name>Meetanshi</name><user>Meetanshi</user><email>support@meetanshi.com</email></author></authors>
+    <date>2018-03-26</date>
+    <time>10:23:59</time>
+    <contents><target name="magelocal"><dir name="Meetanshi"><dir name="Whatsapp"><dir name="Block"><file name="Index.php" hash="fadf1598769a94fea724e31dac647703"/></dir><dir name="Helper"><file name="Data.php" hash="adea0b3395a93b6e80bfc9c061670aeb"/></dir><dir name="Model"><dir name="Entity"><dir name="Attribute"><dir name="Source"><dir name="Abstract"><file name="Enabledisabled.php" hash="499b231d65ba5ffc1c49c22936406c3b"/></dir></dir></dir></dir><dir name="System"><dir name="Config"><dir name="Source"><file name="Deal.php" hash="4ab2acc6a3ddbd9f1b7f268a05c1f57a"/><file name="Product.php" hash="a479c3b4bed3c933a4ccf2f5c3fe9127"/><file name="Size.php" hash="b2587e9595ed4f36b3d4fe6d0be0cb5b"/></dir></dir></dir></dir><dir name="etc"><file name="config.xml" hash="fa1701d2d4cd41f417b1a37a7d0a7a30"/><file name="system.xml" hash="a07396754182c6c99ee0a47d4bfb3b25"/></dir><dir name="sql"><dir name="add_category_product_attribute"><file name="mysql4-install-1.0.0.php" hash="2ac8208c4adfd598221f237f1d22fa92"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="whatsapp.xml" hash="4e89c9ae2d61b207a7129a9e3e01d062"/></dir><dir name="template"><dir name="whatsapp"><dir name="catalog"><dir name="product"><dir name="list"><file name="displaygrid.phtml" hash="14aa0fc401e078a05cc58221a55522a5"/><file name="displaylist.phtml" hash="dcdf419b114f13b7c7c547de77c66dd2"/></dir><file name="list.phtml" hash="4185ccb38ca49552c4f64b1439ec262d"/><dir name="view"><file name="displaywhatsapp.phtml" hash="37de7fab53976b53a9050b8493b6791f"/><file name="head.phtml" hash="b5dcf5507d67700efa7aa3ac67f676db"/><file name="whatsappshare.phtml" hash="d3eeb840bbc2264c8b6444be6a9631df"/></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><file name="whatsapp.css" hash="0b786c34604bc2f3b6d3513bec1bc296"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Meetanshi_Whatsapp.xml" hash="3e37f640b5bd39a22920f71124cde34e"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

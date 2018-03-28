@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <catalog_product_view>
+        <block type="whatsapp/index" name="whatsappimage"  template="whatsapp/catalog/product/view/head.phtml"/>
+        <reference name="head" ifconfig="whatsappshare/whatsappconfig/whatsapp_enable">
+            <action method="append" ifconfig="whatsappshare/whatsappconfig/whatsapp_enable"><block>whatsappimage</block></action>
+            <action method="addCss"><stylesheet>css/whatsapp.css</stylesheet></action>
+        </reference>
+        <block type="whatsapp/index" name="whatsapp_share" template="whatsapp/catalog/product/view/whatsappshare.phtml" >
+            <block type="whatsapp/index" name="display_whatsapp" template="whatsapp/catalog/product/view/displaywhatsapp.phtml"/>
+        </block>
+        <reference name="product.info.addtocart">
+            <action method="append" ifconfig="whatsappshare/whatsappconfig/whatsapp_enable"  ><block>whatsapp_share</block></action>
+        </reference>
+    </catalog_product_view>
+    <catalog_category_default>
+        <reference name="head" ifconfig="whatsappshare/whatsappconfig/whatsapp_enable">
+            <action method="addCss"><stylesheet>css/whatsapp.css</stylesheet></action>
+        </reference>
+        <reference name="product_list">
+            <action method="setTemplate" ifconfig="whatsappshare/whatsappconfig/whatsapp_enable">
+                <template>whatsapp/catalog/product/list.phtml</template>
+            </action>
+            <block type="whatsapp/index" name="display_list" template="whatsapp/catalog/product/list/displaylist.phtml"/>
+            <block type="whatsapp/index" name="display_grid" template="whatsapp/catalog/product/list/displaygrid.phtml"/>
+        </reference>
+    </catalog_category_default>
+</layout>

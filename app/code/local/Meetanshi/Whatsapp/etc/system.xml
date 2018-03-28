@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <meetanshi translate="label">
+            <label><![CDATA[<img src="https://meetanshi.com/media/logo.png" alt="Meetanshi" height="20" style="vertical-align:middle;"/>]]></label>
+            <sort_order>10</sort_order>
+        </meetanshi>
+    </tabs>
+    <sections>
+        <whatsappshare translate="label" module="adminhtml">
+            <label>WhatsApp Share</label>
+            <tab>meetanshi</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <whatsappconfig translate="label">
+                    <label>Configuration</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <whatsapp_enable translate="label">
+                            <label>WhatsApp Share</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_Enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </whatsapp_enable>
+                        <product_wise translate="label">
+                            <label>Enable WhatsApp Share </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>whatsapp/system_config_source_product</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <whatsapp_enable>1</whatsapp_enable>
+                            </depends>
+                        </product_wise>
+                        <category_wise translate="label">
+                            <label>Show WhatsApp Share Button On Category Page</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <whatsapp_enable>1</whatsapp_enable>
+                            </depends>
+                        </category_wise>
+                    </fields>
+                </whatsappconfig>
+                <sharingoption>
+                    <label>Sharing Settings</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <image_size translate="label">
+                            <label>WhatsApp Share Button Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>whatsapp/system_config_source_size</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_size>
+                        <custom_mesaage translate="label">
+                            <label>Custom Sharing Message</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom_mesaage>
+                        <productname_enable translate="label">
+                            <label>Product Name</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_Enabledisable</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </productname_enable>
+                        <productdescription_enable translate="label">
+                            <label>Product Description</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_Enabledisable</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </productdescription_enable>
+                        <productprice_enable translate="label">
+                            <label>Product Price</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_Enabledisable</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </productprice_enable>
+                        <deal_on translate="label">
+                            <label>Deal On</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>whatsapp/system_config_source_deal</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </deal_on>
+                        <specialprice_message translate="label">
+                            <label>Special Price Message</label>
+                            <frontend_type>textarea</frontend_type>
+                            <comment><![CDATA[You must have special price enabled for the products to share the deal.You can make use of {{special_price}} variable in text.]]></comment>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <deal_on>1</deal_on>
+                            </depends>
+                        </specialprice_message>
+                        <discount_message translate="label">
+                            <label>Discount Message</label>
+                            <frontend_type>textarea</frontend_type>
+                            <comment><![CDATA[Make sure you create appropriate shopping cart or catalog price rule and share the details here as a deal.]]></comment>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <deal_on>2</deal_on>
+                            </depends>
+                        </discount_message>
+                    </fields>
+                </sharingoption>
+                <utmtracking translate="label">
+                    <label>UTM Tracking Settings</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <utmtracking_enable translate="label">
+                            <label>UTM Tracking</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_Enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </utmtracking_enable>
+                        <utm_source translate="label">
+                            <label>Campaign Source</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>required-entry</validate>
+                            <depends>
+                                <utmtracking_enable>1</utmtracking_enable>
+                            </depends>
+                        </utm_source>
+                        <utm_medium translate="label">
+                            <label>Campaign Medium</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <utmtracking_enable>1</utmtracking_enable>
+                            </depends>
+                        </utm_medium>
+                        <utm_campaign translate="label">
+                            <label>Campaign Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <utmtracking_enable>1</utmtracking_enable>
+                            </depends>
+                        </utm_campaign>
+                    </fields>
+                </utmtracking>
+                <googleshorturl translate="label">
+                    <label>Google Short URL Settings</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <googleshorturl_enable translate="label">
+                            <label>Google Short URL</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_Enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </googleshorturl_enable>
+                        <apikey translate="label">
+                            <label>API Key</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[Register with Google to <a href="https://developers.google.com/url-shortener/v1/getting_started" target="_blank">get an API Key</a> and make use of URL shortner.]]></comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>required-entry</validate>
+                            <depends>
+                                <googleshorturl_enable>1</googleshorturl_enable>
+                            </depends>
+                        </apikey>
+                    </fields>
+                </googleshorturl>
+            </groups>
+        </whatsappshare>
+    </sections>
+</config>
