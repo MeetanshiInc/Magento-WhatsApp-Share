@@ -1,14 +1,13 @@
 WhatsApp is a top rated messaging app. More than 1 billion people use Whatsapp daily. Such large numbers denote a dedicatedly engaged user base. Magento store owners must grab the opportunity lying here! Metanshi offers Magento WhatsApp Share extension to promote the products and services through the most popular messaging app - WhatsApp.
 
 
-<strong>[
-Magento WhatsApp Share](https://meetanshi.com/magento-whatsapp-share.html)</strong> enables a WhatsApp Share button on Category Page and Product Page, through which the visitors can share your store's products with its details like name, price, description, discount code and URL on WhatsApp very easily! It will help in marketing your products to a large set of potential customers. 
+[***Magento WhatsApp Share***](https://meetanshi.com/magento-whatsapp-share.html) enables a WhatsApp Share button on Category Page and Product Page, through which the visitors can share your store's products with its details like name, price, description, discount code and URL on WhatsApp very easily! It will help in marketing your products to a large set of potential customers. 
 
 
 
 Prompt the visitors to share the products with their friends and family by making the WhatsApp Share facility available to them quite easily and thus leverage their visit for your purpose! The Magento WhatsApp Share extension comes with useful features like including custom messages when the product is shared, enable UTM Tracking code, Google URL shortener and much more!
 
-## Benefits of using Meetanshi’s [Magento WhatsApp Share](https://meetanshi.com/magento-whatsapp-share.html):
+## Benefits of using Meetanshi’s Magento WhatsApp Share:
 
 * Allow sharing product details like product name, short description, price, discounts and special price if available, URL, etc.
 * Three ways to enable WhatsApp Share: Globally, Category-specific, and Product specific.
